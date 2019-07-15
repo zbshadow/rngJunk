@@ -7,6 +7,7 @@ const result_p = document.querySelector(".result > p");
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
+let totalRounds = 0;
 
 function getComputerChoice(){
     const choices = ['r', 'p', 's'];
@@ -62,6 +63,14 @@ function game(userChoice){
         case "ss":
             draw(userChoice, computerChoice);
             break;
+    }
+    totalRounds++;
+    if (totalRounds < 10){
+        document.getElementById('total_plays').innerHTML = "Total Rounds Played: 00" + totalRounds;
+    } else if (totalRounds < 100) {
+        document.getElementById('total_plays').innerHTML = "Total Rounds Played: 0" + totalRounds;
+    } else {
+        document.getElementById('total_plays').innerHTML = "Total Rounds Played: " + totalRounds;
     }
 }
 
