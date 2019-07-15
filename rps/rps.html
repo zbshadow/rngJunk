@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>RNG Junk</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="hamburger.css">
+    </head>
+    <body>
+        <header>
+            <h1>Rock Paper Scissors</h1>
+            <div class="menu-wrap">
+                <input type="checkbox" class="toggler">
+                <div class="hamburger"><div></div></div>
+                <div class="menu">
+                    <div>
+                        <div>
+                            <ul>
+                                <li class="listOption"><a href="file:///E:/Programs/Websites/rngJunk/index.html">Home</a></li>
+                                <li class="listOption"><a href="file:///E:/Programs/Websites/rngJunk/rps/index.html">Rock Paper Scissors</a></li>
+                                <li class="listOption"><a href="#">placehodler2</a></li>
+                                <li class="listOption"><a href="#">placeholder3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="score-board">
+            <div id="user-label" class="badge">user</div>
+            <div id="comp-label" class="badge">comp</div>
+            <span id="user-score">0</span>:<span id="computer-score">0</span>
+        </div>
+
+        <div class="result">
+            <p> Paper Covers rock. You Win!</p>
+        </div>
+
+        <div class="choices">
+            <div id="r" class="choice">
+                <img src="images/rock.png" alt="">
+            </div>
+            <div id="s" class="choice">
+                <img src="images/scissors.png" alt="">
+            </div>
+            <div id="p" class="choice">
+                <img src="images/paper.png" alt="">
+            </div>
+        </div>
+
+        <p id="action-message">Make your move.</p>
+        <script src="app.js" charset="utf-8"></script>
+    </body>
+</html>

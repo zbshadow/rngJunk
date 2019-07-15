@@ -1,38 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <title>Rock Paper Scissors Game</title>
-        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/clock.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <title>RNG Junk</title>
     </head>
     <body>
-        <header>
-            <h1>RNG Junk</h1>
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li class="listOption"><a href="file:///E:/Programs/Websites/landingPage/index.html">Home</a></li>
+                            <li class="listOption"><a href="file:///E:/Programs/Websites/rngJunk/rps/rps.html">Rock Paper Scissors</a></li>
+                            <li class="listOption"><a href="#">placehodler2</a></li>
+                            <li class="listOption"><a href="#">placeholder3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header class="showcase">
+            <div class="container showcase-inner">
+                <h1>Welcome!</h1>
+                <div class="clock">
+
+                    <div class="time">
+                        <span id="hour"></span>
+                        <span id="minute"></span>
+                        <span id="second"></span>
+                    </div>
+                </div>
+            </div>
         </header>
-
-        <div class="score-board">
-            <div id="user-label" class="badge">user</div>
-            <div id="comp-label" class="badge">comp</div>
-            <span id="user-score">0</span>:<span id="computer-score">0</span>
-        </div>
-
-        <div class="result">
-            <p> Paper Covers rock. You Win!</p>
-        </div>
-
-        <div class="choices">
-            <div id="r" class="choice">
-                <img src="images/rock.png" alt="">
-            </div>
-            <div id="s" class="choice">
-                <img src="images/scissors.png" alt="">
-            </div>
-            <div id="p" class="choice">
-                <img src="images/paper.png" alt="">
-            </div>
-        </div>
-
-        <p id="action-message">Make your move.</p>
-        <script src="app.js" charset="utf-8"></script>
+        <script src="clock.js" charset="utf-8"></script>
     </body>
 </html>
